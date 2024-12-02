@@ -1,5 +1,4 @@
 
-
 public class TesterArrayCharOps {
 
     public static void main(String[] args) {
