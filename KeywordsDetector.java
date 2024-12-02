@@ -28,14 +28,10 @@ public class KeywordsDetector {
         }
         if (sentences != null)
         {
-            // Convert the sentence to lowercase
-            for (int i =0; i < sentences.length; i++) {
-                sentences[i] = MyString.lowerCase(sentences[i]);
-            }
             for (int i = 0; i < sentences.length ; i++) {
                 boolean wasPrinted = false;
                 for (int j = 0; j < keywords.length; j++) {
-                    if (MyString.contains(sentences[i], keywords[j])) {
+                    if (MyString.contains(MyString.lowerCase(sentences[i]), keywords[j])) {
                         if (!wasPrinted) {
                         System.out.println(sentences[i]);
                         wasPrinted = true;
