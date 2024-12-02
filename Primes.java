@@ -25,6 +25,6 @@ public class Primes {
             }
         
         System.out.println("There are " + primesCounter + " primes between 2 and " + n + 
-                            " (" + Math.round(((double) primesCounter / n) * 100) + "% are primes) ");
+                            " (" + Math.round(((double) primesCounter / n) * 100) + "% are primes)");
     }
 }
