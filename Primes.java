@@ -19,7 +19,7 @@ public class Primes {
                      
         for (int p = 2; p <= n; p++) { 
              if (isPrime[p]) { 
-                System.out.println(p + " "); 
+                System.out.println(p); 
                 primesCounter ++;
                 } 
             }
