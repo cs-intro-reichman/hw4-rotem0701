@@ -23,8 +23,7 @@ public class Primes {
                 primesCounter ++;
                 } 
             }
-            int primePercentage = (primesCounter * 100) / n;
-            System.out.println("There are " + primesCounter + " primes between 2 and " +
-                                 n + " (" + primePercentage + "% are primes)");
+            double primePercentage = ((double) primesCounter / n) * 100;
+            System.out.printf("There are %d primes between 2 and %d (%.0f%% are primes)%n", primesCounter, n, primePercentage);
     }
 }
